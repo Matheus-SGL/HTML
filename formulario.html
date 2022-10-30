@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário HTML</title>
+</head>
+<body>
+    <form action="/formulario.php">
+        <fieldset>
+            <legend>Dados Gerais</legend>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" minlength="3" required><br><br>
+
+            <label for="birth">Data de Nascimento: </label>
+            <input type="date" name="birth" id="birth">
+            
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" minlength="11" maxlength="11" required>
+
+            <label for="cell">Tel. Celular: </label>
+            <input type="tel" name="cell" id="cell" placeholder="11-99999-9999" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" minlength="3" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="tipo">Tipo: </label>
+            <select id="tipo">
+                <option value="">Selecione</option>
+                <option value="rua">Rua</option>
+                <option value="estrada">Estrada</option>
+                <option value="rodovia">Rodovia</option>
+                <option value="outros">Outros</option>
+            </select>
+
+            <label for="logradouro">Logradouro: </label>
+            <input type="text" name="logradouro" id="logradouro">
+
+            <label for="end_num">Nº: </label>
+            <input type="number" name="end_num" id="end_num">
+
+            <label for="end_comp">Complement: </label>
+            <input type="text" name="end_comp" id="end_comp">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Fale Conosco</legend>
+            <label for="rdbTipo">Tipo de Mensagem: </label><br>
+            <input type="radio" name="tipo_msg" id="sugestao" value="Sugestao">
+            <label for="sugestao">Sugestão</label><br>
+            
+            <input type="radio" name="tipo_msg" id="critica" value="Crítica">
+            <label for="critica">Crítica</label><br>
+
+            <input type="radio" name="tipo_msg" id="elogio" value="Elogio">
+            <label for="elogio">Elogio</label><br>
+
+            <label for="msg">Mensagem: </label>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <input type="submit" value="Enviar sua mensagem">
+            <input type="reset" value="Limpar formulário">
+        </fieldset>
+    </form>
+</body>
+</html>
