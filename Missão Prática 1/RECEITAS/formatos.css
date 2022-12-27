@@ -3,15 +3,24 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+header {
+    height: 60px;
+}
+
 nav { 
     text-align: left; 
     padding: 2%; 
+}
+
+.selected {
+    opacity: 1;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     padding: 1%;
+    opacity: 0.5;
 }
 
 nav a:hover {
@@ -20,8 +29,10 @@ nav a:hover {
 }
 
 main {
+    margin-top: 50px;
     text-align: center;
-    padding-bottom: 2%;
+    overflow-y: auto;
+    height: calc(100vh - 100px);
 }
 
 .titulo {
@@ -40,4 +51,6 @@ footer {
     padding: 5px;
     background-color: black;
     color: white;
+    margin-top: auto;
+    height: 25px;
 }
