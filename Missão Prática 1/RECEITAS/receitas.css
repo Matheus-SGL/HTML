@@ -1,34 +1,13 @@
-.receitas-area {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-around;
-}
-
-.receita-card {
-    max-width: 400px;
-    padding: 5px;
-    border: 1px solid;
-    border-color: black;
-    flex: 1;
-    margin: 5px;
+.card {
     background-color: burlywood;
 }
 
-.receita-card img {
-    width: 250px;
-    height: 200px;
-}
-
-.receita-card ul {
-    max-width: 60%;
+.card ul {
     margin-left: 10%;
     margin-right: 10%;
-    text-align: left;
+    text-align: center;
 }
 
-.receita-card p {
+.card p {
     text-align: justify;
-    padding: 5%;
-    border-top: 1px solid black;
 }
